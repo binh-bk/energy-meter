@@ -21,7 +21,7 @@ PZEM004Tv30 pzem(D6, D5); //RX-TX
 /*_____________________WIFI and MQTT_______________________*/
 #define wifi_ssid "MyWiFi"            // change this
 #define wifi_password "WiFiPass"      // change this
-#define mqtt_server "192.168.1.66"    // change this
+#define mqtt_server "192.168.1.21"    // change this
 #define mqtt_user "mqtt_user"         // change this
 #define mqtt_password "mqtt_pass"     // change this
 #define mqtt_port 1883
@@ -31,7 +31,7 @@ PZEM004Tv30 pzem(D6, D5); //RX-TX
 #define SENSORNAME "main_power"
 char HOSTNAME[30];
 
-uint8_t INVL = 30; //30 second
+uint8_t INVL = 60; //60 second
 uint32_t lastPush=0;
 
 
