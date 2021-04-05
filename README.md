@@ -14,3 +14,9 @@ Using Peacefair PZEM-004T energy sensor for household IoT energy meter
 <p>
     <img src="img/energy_hookup.jpg">
 </p>
+
+# A graph for power with timestamp
+<p>
+    <img src="img/power.png">
+</p>
+
