@@ -46,9 +46,9 @@ def on_message(client, userdata, msg):
                 data['time'] = takeTime()
 
             #  send to a log file
-            file_log.to_log(data, json_=status)
+            # json_=False -> save file to .csv format
+            file_log.to_log(data, json_=True)
                 
-        
         except Exception as e:
             print(f'Exception {e} - not json')          
     else:
