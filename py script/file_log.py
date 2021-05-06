@@ -16,7 +16,7 @@ def host_folder(sensor, json_=False):
     if len(all_dirs) == 0 or this_month_folder not in all_dirs:
         os.makedirs(this_month_folder)
         print('created: {}'.format(this_month_folder))
-    if json:
+    if json_:
         return os.path.join(basedir, this_month_folder, f'{sensor}.txt')
     return os.path.join(basedir, this_month_folder, f'{sensor}.csv')
 
@@ -28,7 +28,7 @@ def to_log(data, json_=True):
     file_existed = os.path.isfile(fname)
     headers = list(data.keys())
 
-    if json:
+    if json_:
         fname = host_folder(data['sensor'], json_=json_)
         with open(host_folder(sensor), 'a') as f:
             f.write(json.dumps(data))
