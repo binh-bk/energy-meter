@@ -7,7 +7,7 @@ import csv
 import time
 import json
 
-def host_folder(sensor, json_=False):
+def host_folder(sensor, json_=True):
     """designate a folder to save each month"""
 
     this_month_folder = time.strftime('%b%Y')
