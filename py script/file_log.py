@@ -20,7 +20,7 @@ def host_folder(sensor, json_=False):
         return os.path.join(basedir, this_month_folder, f'{sensor}.txt')
     return os.path.join(basedir, this_month_folder, f'{sensor}.csv')
 
-def to_log(data, json_):
+def to_log(data, json_=True):
     '''write a json stream to a CSV format'''
 
     sensor = data['sensor']
